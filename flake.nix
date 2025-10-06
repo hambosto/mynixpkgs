@@ -7,11 +7,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
     pwmenu = {
       url = "github:e-tho/pwmenu";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,7 +29,6 @@
   outputs =
     {
       iwmenu,
-      lanzaboote,
       pwmenu,
       sweetbyte,
       swww,
@@ -47,7 +41,5 @@
         sweetbyte = sweetbyte.packages.${final.system}.default;
         swww = swww.packages.${final.system}.swww;
       };
-
-      nixosModules.lanzaboote = lanzaboote.nixosModules.lanzaboote;
     };
 }
