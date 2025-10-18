@@ -20,18 +20,18 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    swww = {
-      url = "github:LGFae/swww";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
+    # swww = {
+    #   url = "github:LGFae/swww";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.rust-overlay.follows = "rust-overlay";
+    # };
   };
   outputs =
     {
       iwmenu,
       pwmenu,
       sweetbyte,
-      swww,
+      # swww,
       ...
     }:
     {
@@ -39,7 +39,7 @@
         iwmenu = iwmenu.packages.${final.system}.default;
         pwmenu = pwmenu.packages.${final.system}.default;
         sweetbyte = sweetbyte.packages.${final.system}.default;
-        swww = swww.packages.${final.system}.swww;
+        # swww = swww.packages.${final.system}.swww;
       };
     };
 }
