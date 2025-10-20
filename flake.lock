@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1747046372,
+        "narHash": "sha256-CIVLLkVgvHYbgI2UpXvIIBJ12HWgX+fjA8Xf8PUmqCY=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "9100a0f413b0c601e0533d1d94ffd501ce2e7885",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -124,7 +140,8 @@
         "nixpkgs": "nixpkgs",
         "pwmenu": "pwmenu",
         "rust-overlay": "rust-overlay",
-        "sweetbyte": "sweetbyte"
+        "sweetbyte": "sweetbyte",
+        "swww": "swww"
       }
     },
     "rust-overlay": {
@@ -165,6 +182,30 @@
       "original": {
         "owner": "hambosto",
         "repo": "sweetbyte",
+        "type": "github"
+      }
+    },
+    "swww": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1760981656,
+        "narHash": "sha256-bX4o+rDwEzzPhC5+d+VPTroOpzoLwLZrowV8gTrYNkk=",
+        "owner": "LGFae",
+        "repo": "swww",
+        "rev": "95fe9e5fa555850be9a2a6084f422e61065965a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "LGFae",
+        "repo": "swww",
         "type": "github"
       }
     },
